@@ -1,0 +1,15 @@
+.btn__text--default {
+    font-size: var(--headline-size);
+    font-weight: var(--headline-weight);
+    padding: 13px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+
+.btn__text--default:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-2);
+    color: var(--grey-1);
+}

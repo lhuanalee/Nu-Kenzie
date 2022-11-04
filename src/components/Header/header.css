@@ -1,0 +1,37 @@
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--grey-1);
+    position: fixed;
+    box-shadow: 0px 10px 17px -5px rgba(129, 129, 129, 0.64);
+    z-index: auto;
+    background-color: var(--grey-1);
+}
+
+header > div {
+    width: 63%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: auto;
+}
+
+.button__inicio {
+    width: max-content;
+    font-size: var(--headline-size);
+    font-weight: var(--headline-weight);
+    padding: 13px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--grey-2);
+    color: var(--grey-4);
+}
+
+.button__inicio:hover {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--white);
+}

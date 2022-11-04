@@ -1,0 +1,65 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 120px;
+}
+
+.first__section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.second__section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.resumo__financeiro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.resumo__financeiro > p {
+    font-size: var(--headline-size);
+    font-weight: var(--title-weight-4);
+}
+
+.ul__filtros {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+li {
+    font-size: var(--headline-size);
+    font-weight: var(--headline-weight);
+    padding: 13px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--grey-2);
+    color: var(--grey-4);
+}
+
+.li__filtros {
+    font-size: var(--headline-size);
+    font-weight: var(--headline-weight);
+    padding: 13px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--grey-2);
+    color: var(--grey-4);
+}
+
+.li__filtros:hover {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--white);
+}

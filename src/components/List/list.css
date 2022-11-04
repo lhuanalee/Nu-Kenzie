@@ -1,0 +1,35 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p__descricao {
+    font-size: var(--headline-size);
+    font-weight: var(--title-weight-4);
+}
+
+.p__imagem {
+    display: flex;
+    gap: 35px;
+}
+
+.p__imagem > button {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: var(--grey-2);
+}
+
+.p__valor__lista {
+    font-size: var(--body-size);
+    font-weight: var(--body-weight);
+    color: var(--grey-4);
+}

@@ -1,0 +1,26 @@
+.valor__total {
+    width: 360px;
+    margin: 10px;
+    padding: 20px 25px;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paragrafos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p__valor__total {
+    color: var(--grey-4);
+    font-size: var(--headline-size);
+}
+
+.p__valor {
+    color: var(--color-primary);
+    font-size: var(--headline-size);
+}
