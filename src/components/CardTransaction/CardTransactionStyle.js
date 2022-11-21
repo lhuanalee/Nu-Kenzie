@@ -22,7 +22,7 @@ export const CardTransactionStyle = styled.div`
   overflow: hidden;
 
   .card {
-    width: 100vw;
+    width: 100%;
 
     padding: 13px;
     margin-top: 29px;
