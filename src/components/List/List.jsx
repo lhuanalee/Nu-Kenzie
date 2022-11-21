@@ -3,7 +3,14 @@ import CardTransaction from "../CardTransaction/CardTransaction";
 import FinancialSummary from "../FinancialSummary/FinancialSummary";
 import { ListStyle } from "./ListStyle";
 
-const List = ({ filtered, setFiltered, transaction, setTransaction }) => {
+const List = ({
+  filtered,
+  setFiltered,
+  transaction,
+  setTransaction,
+  backgroundColor,
+  setBackgroundColor,
+}) => {
   return (
     <ListStyle>
       <FinancialSummary
@@ -11,6 +18,8 @@ const List = ({ filtered, setFiltered, transaction, setTransaction }) => {
         filtered={filtered}
         transaction={transaction}
         setTransaction={setTransaction}
+        backgroundColor={backgroundColor}
+        setBackgroundColor={setBackgroundColor}
       />
 
       {filtered.length > 0 ? (
