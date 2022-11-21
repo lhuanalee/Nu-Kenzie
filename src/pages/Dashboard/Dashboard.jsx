@@ -10,6 +10,7 @@ const Dashboard = ({ setIsLoggedIn, setClick }) => {
   const [value, setValue] = useState("");
   const [type, setType] = useState("Entrada");
   const [filtered, setFiltered] = useState([]);
+  const [backgroundColor, setBackgroundColor] = useState("");
 
   return (
     <>
@@ -26,6 +27,7 @@ const Dashboard = ({ setIsLoggedIn, setClick }) => {
           type={type}
           setType={setType}
           setFiltered={setFiltered}
+          setBackgroundColor={setBackgroundColor}
         />
         <List
           transaction={transaction}
@@ -35,6 +37,8 @@ const Dashboard = ({ setIsLoggedIn, setClick }) => {
           type={type}
           filtered={filtered}
           setFiltered={setFiltered}
+          backgroundColor={backgroundColor}
+          setBackgroundColor={setBackgroundColor}
         />
       </DashboardStyle>
     </>

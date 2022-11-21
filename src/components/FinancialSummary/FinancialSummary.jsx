@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import { FinancialSummaryStyle } from "./FinancialSummaryStyle";
 
@@ -6,17 +6,15 @@ const FinancialSummary = ({
   filtered,
   setFiltered,
   transaction,
-  setTransaction,
+  backgroundColor,
+  setBackgroundColor,
 }) => {
-  const [backgroundColor, setbackgroundColor] = useState("");
-
   const filteredCard = (type) => {
     if (type === "Todos") {
       setFiltered(transaction);
-      setbackgroundColor("Todos");
     } else {
       const filteredItem = transaction.filter((item) => item.type === type);
-      setbackgroundColor(type);
+      setBackgroundColor(type);
       setFiltered(filteredItem);
     }
   };

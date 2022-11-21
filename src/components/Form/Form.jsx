@@ -1,4 +1,3 @@
-import { editableInputTypes } from "@testing-library/user-event/dist/utils";
 import Button from "../Button/Button";
 import Select from "../Select/Select";
 import Total from "../Total/Total";
@@ -14,6 +13,7 @@ const Form = ({
   type,
   setType,
   setFiltered,
+  setBackgroundColor,
 }) => {
   const addCard = (event) => {
     event.preventDefault();
@@ -36,6 +36,7 @@ const Form = ({
     setDescription("");
     setValue("");
     setType("Entrada");
+    setBackgroundColor("Todos");
   };
 
   return (

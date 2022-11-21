@@ -7,7 +7,6 @@ const CardTransaction = ({
   setFiltered,
   transaction,
   setTransaction,
-  className,
 }) => {
   const removeCard = (index) => {
     const remove = transaction.filter((item, i) => i !== index);
