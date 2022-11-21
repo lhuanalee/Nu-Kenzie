@@ -28,17 +28,24 @@ export const HomeStyle = styled.div`
     h1 {
       font-size: var(--title-size-1);
       text-align: left;
+
+      color: var(--white);
     }
 
     p {
       font-size: var(--headline-size);
       font-weight: var(--body-weight);
       text-align: left;
+
+      color: var(--white);
     }
 
     button {
       width: 60%;
 
+      padding: 12px 0;
+
+      color: var(--white);
       background: var(--color-primary);
     }
 

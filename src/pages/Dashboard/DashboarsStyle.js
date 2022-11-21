@@ -6,20 +6,19 @@ export const DashboardStyle = styled.div`
 
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   gap: 25px;
 
   font-family: "Inter";
 
   @media (min-width: 768px) {
-    width: 820px;
-
-    margin: 0 auto;
+    width: 100%;
 
     gap: 20px;
 
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 `;

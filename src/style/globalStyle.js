@@ -19,7 +19,7 @@ body {
 
     font-family: var(--font-family-default);
 
-    color: var(--white)
+    color: var(--grey-4)
 }
 
 :root {
@@ -39,7 +39,7 @@ body {
     --font-family-default: 'Nunito', sans-serif;
 
     /* Font-size */
-    --title-size-1: 28px;
+    --title-size-1: 32px;
     --title-size-2: 24px;
     --title-size-3: 20px;
     --title-size-4: 14px;

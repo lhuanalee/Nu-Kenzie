@@ -28,7 +28,9 @@ export const CardStyle = styled.div`
 
   @media (min-width: 435px) {
     width: 400px;
+  }
 
-    margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 455px;
   }
 `;

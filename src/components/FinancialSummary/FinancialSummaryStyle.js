@@ -16,7 +16,7 @@ export const FinancialSummaryStyle = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     transition: 2s;
@@ -35,15 +35,20 @@ export const FinancialSummaryStyle = styled.div`
 
     display: flex;
     gap: 7px;
-  }
 
-  button {
-    padding: 8px 12px;
+    button {
+      &:hover {
+        color: var(--white);
+        background-color: var(--grey-3);
 
-    font-size: var(--body-size);
-    font-family: var(--font-family-default);
+        transition: 1.3s;
+      }
+    }
 
-    background-color: var(--color-primary);
+    .activedButton {
+      background-color: var(--color-primary);
+      color: var(--white);
+    }
   }
 
   @media (min-width: 435px) {
@@ -54,17 +59,21 @@ export const FinancialSummaryStyle = styled.div`
   }
 
   @media (min-width: 768px) {
-    width: 400px;
+    width: 100%;
 
     margin: 0;
 
     .summary {
       width: 100%;
 
-      margin-top: 28px;
-
       justify-content: space-between;
       align-items: center;
+    }
+
+    div {
+      gap: 16px;
+
+      transition: 2s;
     }
   }
 `;

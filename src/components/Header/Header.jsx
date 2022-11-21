@@ -7,7 +7,7 @@ const Header = ({ setIsLoggedIn }) => {
     <HeaderStyle>
       <div>
         <img src={Logo} alt="Logo" />
-        <Button props={() => setIsLoggedIn(false)}>Sair</Button>
+        <Button onClick={() => setIsLoggedIn(false)}>Sair</Button>
       </div>
     </HeaderStyle>
   );
