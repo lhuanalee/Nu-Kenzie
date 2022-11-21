@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const FormStyle = styled.form`
   width: 100vw;
 
+  margin-top: 105px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,15 +14,15 @@ export const FormStyle = styled.form`
   .container {
     width: 90%;
 
-    margin-top: 130px;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     border: 1px solid var(--grey-2);
     border-radius: 4px;
+
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.5);
   }
 
   .form {
@@ -31,6 +33,7 @@ export const FormStyle = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
 
     label {
       padding-bottom: 12px;
@@ -43,6 +46,8 @@ export const FormStyle = styled.form`
     }
 
     input {
+      width: 100%;
+
       padding: 12px 13px;
 
       border: 2px solid transparent;
@@ -54,10 +59,10 @@ export const FormStyle = styled.form`
     }
   }
 
-  span {
+  p {
     padding: 4px 0 17px;
     text-align: left;
-    font-size: var(--title-size-4);
+    font-size: var(--body-size);
     font-weight: var(--body-weight);
 
     color: var(--grey-3);
@@ -83,6 +88,17 @@ export const FormStyle = styled.form`
         border-radius: 8px;
 
         background-color: var(--grey-1);
+
+        input {
+          border: 2px solid transparent;
+          border-radius: 8px;
+          background: var(--grey-1);
+        }
+
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
       }
 
       .value {
@@ -94,7 +110,7 @@ export const FormStyle = styled.form`
       }
 
       p {
-        padding-right: 15px;
+        padding: 0 15px 0;
 
         font-size: var(--headline-size);
         font-weight: var(--body-weight);
@@ -106,21 +122,32 @@ export const FormStyle = styled.form`
   button {
     width: 90%;
 
+    padding: 12px 0;
+
     margin-bottom: 38px;
 
     font-size: var(--body-size);
+    font-weight: var(--headline-weight);
 
+    color: var(--white);
     background-color: var(--color-primary);
   }
 
   @media (min-width: 431px) {
+    margin-top: 105px;
+
     .container {
       width: 388px;
     }
   }
 
   @media (min-width: 768px) {
-    width: 41%;
+    width: 400px;
+    height: 425px;
+
+    margin-top: 13px;
+
+    justify-content: flex-start;
 
     .container {
       width: 325px;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
   width: 100%;
 
-  padding: 15px 20px;
+  padding: 27px 20px;
 
   position: fixed;
   top: 0;
@@ -15,8 +15,6 @@ export const HeaderStyle = styled.header`
   div {
     width: 100%;
 
-    margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
 
@@ -27,18 +25,29 @@ export const HeaderStyle = styled.header`
 
       color: var(--black);
       background-color: var(--grey-2);
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--grey-3);
+
+        transition: 1.3s;
+      }
     }
   }
 
   @media (min-width: 431px) {
     div {
       width: 388px;
+
+      margin: 0 auto;
     }
   }
 
   @media (min-width: 768px) {
     div {
-      width: 753px;
+      width: 735px;
+
+      margin: 0 auto;
     }
   }
 `;

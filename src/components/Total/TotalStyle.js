@@ -12,6 +12,8 @@ export const TotalStyle = styled.div`
   border: 1px solid var(--grey-2);
   border-radius: 4px;
 
+  background-color: var(--color-primary);
+
   div {
     display: flex;
     justify-content: space-between;
@@ -21,7 +23,7 @@ export const TotalStyle = styled.div`
       font-weight: var(--title-weight-4);
       font-family: var(--font-family-default);
 
-      color: var(--grey-4);
+      color: var(--white);
     }
 
     p {
@@ -29,17 +31,19 @@ export const TotalStyle = styled.div`
       font-weight: var(--title-weight-4);
       font-family: var(--font-family-default);
 
-      color: var(--color-primary);
+      color: var(--white);
     }
   }
 
   span {
+    padding: 0;
+
     font-size: var(--body-size);
     font-weight: var(--body-weight);
     font-family: var(--font-family-default);
     text-align: left;
 
-    color: var(--grey-3);
+    color: var(--white);
   }
 
   @media (min-width: 431px) {
@@ -48,6 +52,8 @@ export const TotalStyle = styled.div`
 
   @media (min-width: 768px) {
     width: 325px;
+
+    gap: 0;
 
     margin-bottom: 80px;
   }

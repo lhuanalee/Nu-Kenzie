@@ -1,11 +1,10 @@
 import { SelectStyle } from "./SelectStyle";
 
-const Select = () => {
+const Select = ({ onChange, value }) => {
   return (
-    <SelectStyle name="" id="">
-      <option value="Select">Select</option>
-      <option value="Entry">Entrada</option>
-      <option value="Expense">Despesa</option>
+    <SelectStyle onChange={onChange} value={value} name="" id="">
+      <option value="Entrada">Entrada</option>
+      <option value="Despesa">Despesa</option>
     </SelectStyle>
   );
 };
