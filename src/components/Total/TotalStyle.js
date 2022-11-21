@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const animationCard = keyframes`
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+`;
 
 export const TotalStyle = styled.div`
   width: 90%;
@@ -13,6 +22,8 @@ export const TotalStyle = styled.div`
   border-radius: 4px;
 
   background-color: var(--color-primary);
+
+  animation: ${animationCard} 1.5s;
 
   div {
     display: flex;

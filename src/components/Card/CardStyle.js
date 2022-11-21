@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const animationCard = keyframes`
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+`;
 
 export const CardStyle = styled.div`
   width: 100%;
@@ -9,6 +18,8 @@ export const CardStyle = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  overflow: hidden;
 
   h1 {
     padding-bottom: 27px;
@@ -24,6 +35,18 @@ export const CardStyle = styled.div`
     width: 100%;
 
     padding-bottom: 30px;
+  }
+
+  .firstNoCard {
+    animation: ${animationCard} 1s;
+  }
+
+  .secondNoCard {
+    animation: ${animationCard} 1.5s;
+  }
+
+  .thirdNoCard {
+    animation: ${animationCard} 2s;
   }
 
   @media (min-width: 435px) {

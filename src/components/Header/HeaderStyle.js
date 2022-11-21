@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
   width: 100%;
 
+  display: flex;
+  justify-content: center;
+
   padding: 27px 20px;
 
   position: fixed;
@@ -38,16 +41,22 @@ export const HeaderStyle = styled.header`
   @media (min-width: 431px) {
     div {
       width: 388px;
-
-      margin: 0 auto;
     }
   }
 
   @media (min-width: 768px) {
+    padding: 27px 0;
     div {
-      width: 735px;
+      width: 100%;
 
-      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 805px) {
+    div {
+      width: 805px;
     }
   }
 `;
