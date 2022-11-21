@@ -12,13 +12,17 @@ export const animationCard = keyframes`
 export const CardTransactionStyle = styled.div`
   width: 100%;
 
+  padding: 30px 0;
+
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   overflow: hidden;
 
   .card {
-    width: 100%;
+    width: 100vw;
 
     padding: 13px;
     margin-top: 29px;
@@ -87,5 +91,13 @@ export const CardTransactionStyle = styled.div`
     font-weight: var(--body-weight);
 
     color: var(--grey-3);
+  }
+
+  @media (min-width: 435px) {
+    width: 400px;
+  }
+
+  @media (min-width: 768px) {
+    width: 455px;
   }
 `;
