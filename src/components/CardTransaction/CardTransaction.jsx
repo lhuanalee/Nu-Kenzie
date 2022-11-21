@@ -27,7 +27,12 @@ const CardTransaction = ({
           <div className="list">
             <h2>{item.description}</h2>
             <div className="valueTrash">
-              <p>{item.value}</p>
+              <p>
+                {Math.abs(item.value).toLocaleString("pt-br", {
+                  style: "currency",
+                  currency: "BRL",
+                })}
+              </p>
               <Button type={"button"} onClick={() => removeCard(index)}>
                 <FaTrashAlt />
               </Button>

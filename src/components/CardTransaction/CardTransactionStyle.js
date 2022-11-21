@@ -1,10 +1,21 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const animationCard = keyframes`
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+`;
 
 export const CardTransactionStyle = styled.div`
   width: 100%;
 
   display: flex;
   flex-direction: column;
+
+  overflow: hidden;
 
   .card {
     width: 100%;
@@ -17,6 +28,8 @@ export const CardTransactionStyle = styled.div`
     align-items: flex-start;
 
     background-color: var(--grey-1);
+
+    animation: ${animationCard} 1.5s;
 
     .list {
       width: 100%;
@@ -34,7 +47,7 @@ export const CardTransactionStyle = styled.div`
       }
 
       .valueTrash {
-        width: 20%;
+        width: 32%;
 
         display: flex;
         justify-content: space-between;

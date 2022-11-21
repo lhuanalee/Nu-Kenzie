@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 import List from "../../components/List/List";
 import { DashboardStyle } from "./DashboarsStyle";
 
-const Dashboard = ({ setIsLoggedIn }) => {
+const Dashboard = ({ setIsLoggedIn, setClick }) => {
   const [transaction, setTransaction] = useState([]);
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
@@ -13,7 +13,7 @@ const Dashboard = ({ setIsLoggedIn }) => {
 
   return (
     <>
-      <Header setIsLoggedIn={setIsLoggedIn} />
+      <Header setIsLoggedIn={setIsLoggedIn} setClick={setClick} />
 
       <DashboardStyle>
         <Form

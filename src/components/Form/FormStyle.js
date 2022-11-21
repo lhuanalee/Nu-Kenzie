@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const animationCard = keyframes`
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+`;
 
 export const FormStyle = styled.form`
   width: 100vw;
@@ -10,6 +19,8 @@ export const FormStyle = styled.form`
   align-items: center;
   flex-direction: column;
   gap: 16px;
+
+  animation: ${animationCard} 1.5s;
 
   .container {
     width: 90%;
@@ -102,7 +113,7 @@ export const FormStyle = styled.form`
       }
 
       .value {
-        width: 40%;
+        width: 55%;
 
         padding: 10px 0 11px 10px;
 
