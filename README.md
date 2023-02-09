@@ -1,0 +1,3 @@
+A plataforma Nu Kenzie foi criada com o intuito de ser uma aplicação onde o usuário pudesse gerenciar seus gastos, cadastrando entradas e saídas de valores. Para a a formação desse projeto foi realizada a componetização de alguns elementos, a utilização do useState para controlar o estado da lista de transações e a criação de um formulário, onde a partir dele seriam obtidos os valores de entrada e saída. Também foram implementadas algumas funcionalidades, como: poder filtrar pelo tipo de transação, editar a descrição e excluir.
+
+Link do projeto: https://react-entrega-s1-template-nu-kenzie-lhuana-lee.vercel.app/
